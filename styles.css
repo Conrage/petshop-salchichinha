@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,300&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color:rgba(255, 166, 0, 0.075);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+header {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+}
+nav a:hover {
+  color: orange;
+}
+nav a.selected {
+  color: orange;
+  font-weight: 600;
+}
+logo {
+  height: fit-content;
+  padding: 0.6rem;
+  border: 1px solid #000;
+}
+.landing {
+  position: relative;
+  padding: 0rem 3rem;
+  margin: 0rem 3rem;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 166, 0, 0.24);
+}
+h1 {
+  color: #313131;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: rgb(236, 148, 32);
+}
+.anatomia-section p{
+    color: rgb(82, 54, 17);
+    line-height: 1.7rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    width: 90%;
+}
+article {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.anatomia-section{
+    max-width: 1440px;
+    margin-bottom: 4rem;
+}
+.anatomia-section .header{
+    display: flex;
+    align-items: center;
+}
+.anatomia-box{
+    background-color:rgba(214, 149, 28, 0.13);
+    padding:3rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    margin-top: 0rem;
+}
+.anatomia-box ul{
+    display: flex;
+    padding:0;
+    justify-content:space-evenly;
+}
+.anatomia-box ul li{
+    background-color:rgba(255, 253, 248, 0.788);
+    display:flex;
+    flex-direction:column;
+    /* box-shadow: 0 0 60px -40px rgba(0, 0, 0, 0.6); */
+    justify-content:center;
+    align-items: center;
+    padding:2rem;
+    gap: 2rem;
+    border-radius: 30%;  
+}
+.anatomia-box ul li span{
+    color: #fff;
+    font-weight: 600;
+}
+.anatomia-box ul li:nth-child(1) span{
+    background-color:#5AD5E3;
+    padding:1rem;
+    border-radius: 40%;
+}
+.anatomia-box ul li:nth-child(3) span{
+    background-color:#6ce4c8;
+    padding:1rem;
+    border-radius: 40%;
+}
+.anatomia-box ul li:nth-child(2) span{
+    background-color:#FF5B2E;
+    padding:1rem;
+    border-radius: 40%;
+}
+.anatomia-img{
+    width: 40%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    padding:0rem 2rem;
+    background-color:rgba(214, 149, 28, 0.13);
+}
+.training-section{
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content:space-between;
+}
+.training-section .text{
+  width: 29%;
+  text-align: center;
+  align-self: center;
+}
+.training-section .text p{
+  margin:0;
+  margin-top: 1rem;
+  color: rgb(82, 54, 17);
+  padding:0;
+}
+.training-section ol{
+  padding: 0;
+  width: 70%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  height: 40rem;
+  display: flex;
+
+}
+.training-steps li{
+  list-style: none;
+  border-radius: 1rem;
+  width: calc(50% - 0.5rem);
+  min-width: 16rem;
+  height:fit-content;
+  min-height: 20rem;
+  font-size: 1.1rem;
+  max-width: 25rem;
+  padding: 1rem;
+}
+.training-steps li p{
+  margin-top: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.training-steps li:nth-child(2), .training-steps li:nth-child(3){
+  background-color: #fff;
+  box-shadow: -0.1rem 0.3rem 0.6rem 0.1rem rgba(226, 226, 226, 0.075);
+}
+.training-steps li:nth-child(1), .training-steps li:nth-child(4){
+  background-color: rgb(255, 145, 0);
+  color: #fff;
+  box-shadow: -0.1rem 0.3rem 0.6rem 0.1rem rgba(255, 145, 0, 0.219);
+}
+.videos-section{
+  width: 100%;
+  margin-top: 4.5rem;
+  max-width: 1440px;
+}
+.videos-section iframe{
+  border-radius: 1rem;
+  width: 60%;
+  height:100%
+}
+.videos-section .video-type{
+  width: 100%;
+  border-radius: .5rem;
+  color: #2c2c2c;
+  font-weight: 500;
+  height: fit-content; 
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.video-type.selected{
+  color: #fff;
+  background-color: rgb(255, 145, 0);
+  box-shadow: -0.1rem 0.3rem 0.6rem 0.1rem rgba(255, 145, 0, 0.219);
+}
+.video-type .material-icons{
+  color: #2c2c2c;
+}
+.video-type.selected .material-icons{
+  color: #fff;
+}
+.video-type:hover{
+  box-shadow: 0 0 1rem 1px rgb(0, 0, 0, 0.05);
+}
+.flex-column{
+  display: flex;
+  gap: .5rem;
+  width: 40%;
+  flex-direction: column;
+}
+.width-100{
+  width: 100%;
+}
+.video-box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 2rem;
+  background-color:#fff;
+  padding: 2rem;
+  gap: 1rem;
+  height:30rem;
+}
+.landing div.text {
+  width: 60vw;
+  padding: 3rem 0rem;
+  margin: auto;
+  z-index: 2;
+}
+.salsicha-landing {
+  margin-top: auto;
+  width: 90%;
+  max-width: 400px;
+  object-fit: cover;
+}
+.landing .orange-circle {
+  position: absolute;
+  z-index: 1;
+  width: 4rem;
+  border-radius: 100%;
+  height: 4rem;
+  background-color: rgb(255, 145, 0);
+  box-shadow: -0.1rem 0.3rem 0.6rem 0.1rem rgba(255, 145, 0, 0.219);
+}
+.orange-circle:nth-child(4) {
+  right: 1.1rem;
+  bottom: 2rem;
+}
+.orange-circle:nth-child(3) {
+  top: 4rem;
+  margin-left: 4rem;
+}
+.orange-circle:nth-child(2) {
+  bottom: 4rem;
+}
+footer {
+  display: flex;
+  margin-top: 3rem;
+  height:10rem;
+  padding: 3rem;
+  background-color: #FAEBD1;
+  align-items: flex-start;
+  justify-content: center;
+}
+footer logo{
+  margin-right: auto;
+}
+ul {
+  list-style: none;
+}
